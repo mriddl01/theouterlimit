@@ -1,0 +1,20 @@
+#Example reference: https://gist.github.com/ju2wheels/3d1a1dfa498977874d03
+FROM tomcat:7-jre8
+
+## MAINTAINER FirstName LastName <first.last@company.com>
+MAINTAINER TPP TPPArchitect <tpp.tpparchitect@landline.com>
+
+## LABEL <key>=<value> <key>=<value> <key>=<value> ...
+LABEL type="demo" production="false" version="1.0" name="tcatV7J8" level="1"
+
+##javax.servlet.jsp-api
+ADD	http://central.maven.org/maven2/javax/servlet/jsp/javax.servlet.jsp-api/2.3.1/javax.servlet.jsp-api-2.3.1.jar	/usr/local/tomcat/lib
+
+##servlet-api
+ADD	http://central.maven.org/maven2/javax/servlet/jsp/javax.servlet.jsp-api/2.3.1/javax.servlet.jsp-api-2.3.1.jar	/usr/local/tomcat/lib
+
+##servlet-api
+ADD	http://central.maven.org/maven2/javax/servlet/jsp/javax.servlet.jsp-api/2.3.1/javax.servlet.jsp-api-2.3.1.jar	/usr/local/tomcat/lib
+
+##mongo jdbc-driver
+ADD	http://central.maven.org/maven2/org/mongodb/mongo-java-driver/3.7.1/mongo-java-driver-3.7.1.jar	/usr/local/tomcat/lib

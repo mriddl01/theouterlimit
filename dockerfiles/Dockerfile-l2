@@ -1,0 +1,6 @@
+#Example reference: https://gist.github.com/ju2wheels/3d1a1dfa498977874d03
+FROM <the-file-created-by-Dockerfile-l1>
+
+# MAINTAINER FirstName LastName <first.last@company.com>
+MAINTAINER Application Architect <app.arch@landline.com>
+
